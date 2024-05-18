@@ -75,6 +75,10 @@ p {
 .main__menu ul li a span {
   font-weight: 500;
 }
+.main__menu ul li.active a {
+    color: white;
+}
+
 /*-------Hero CSS-------*/
 .hero__sn .hero__heading p.sub__heading {
   font: normal normal 400 16px/1.5 var(--font);
@@ -291,7 +295,7 @@ p {
 .works__grid .card__grid:hover {
     background: #030303;
     border: 1px solid #b1b1b1;
-    transform: translateY(-10px);
+    /*transform: translateX(10px);*/
 }
 .works__grid .card__grid:hover img {
     transform: scale(1.08);
@@ -309,6 +313,32 @@ p {
 .works__grid .card__grid img {
   width: 100%;
 }
+.visite-btn a img ,.download-btn a img{
+    height: 20px;
+    opacity: 1;
+    width: 20px !important;
+    color: black;
+    margin-left: 10px;
+    filter: brightness(.1);
+     transition: all ease .5s;
+}.visite-btn a ,.download-btn a{
+  border: 1px solid #585858;
+    background-color: white;
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    line-height: 1.2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .5s;
+}
+.visite-btn a:hover,.works__grid .card__grid:hover .visite-btn a,.download-btn a:hover {border: 1px solid #fff;
+    background-color: black;color: white;}
+
+.works__grid .card__grid:hover .visite-btn a img,.visite-btn a:hover img,.download-btn a:hover img{filter: none;}
 
 /*=======Achievement CSS=======*/
 .achiev__inner {
@@ -757,48 +787,33 @@ a,a:hover {
 }
 
 @media (max-width: 767px){
-.container, .container-lg, .container-md, .container-sm {
-    max-width: 100%;
-    margin-left: 0;
-}.main__menu {right: 0; top: 0; left: 0; height: auto; min-height: auto; padding: 0 1rem;}
-.main__menu ul li.active {border-bottom: 3px solid white; border-left: none; }
-.main__menu ul {display: flex; overflow: auto; }
+.container, .container-lg, .container-md, .container-sm {max-width: 100%; margin-left: 0; }
+.main__menu {right: 0; top: 0; left: 0; height: auto; min-height: auto; padding: 0 1rem;} 
+.main__menu ul li.active {border-bottom: 3px solid white; border-left: none; } 
+.main__menu ul {display: flex; overflow: auto; } .inter_nme a,h4.cards__title,.works__grid .card__grid figcaption h4 {font-size: 20px; }
+.form-group label, .inter_year a {font-size: 12px; }
+.hero__sn .hero__heading h3 {font: normal normal 600 25px / 1.2 var(--font);} 
+.hero__btm .hero__lt::before {width: 106px; height: 106px; right: 10px; top: -44px; }
+.hero__btm .hero__lt img {min-height: 300px; max-height: 300px;object-position: top; } 
+.page-section{overflow: hidden;    padding: 7rem 0 0;} 
+.hero__btm .hero__lt .lt__img {margin: 0 0 1rem; } 
+.main__heading h1 {font: normal normal 300 34px/1 var(--font); }
+.about__inner .lt__about {width: 80%; }
+.Works__sn .main__heading .heading__sub {flex-wrap: wrap; } 
+.hero__btm .hero__rt {margin: 2rem auto 0; } .hero__btm .hero__rt h6 {font: normal normal 600 25px/22px var(--font); }
+.hero__sn .hero__tp .social__hero {width: 200px; padding: 0px 15px; }
+.hero__sn .hero__tp .social__hero li a img {height: 25px;} 
+.main-marq .box .item {padding: 0 10px; }.main-marq.md-text .box .item h4 {font-size: 14px;}
+.main-marq .box .item h4 .icon {margin-left: 15px !important; }
+.rt__about h5 {font: normal normal 600 23px / 1 var(--font);}
+.counter h2 {font-size: 55px; font-weight: bold; }
+.inter_nme p {font-weight: 600;font-size: 16px;}
+.hero__lt.row .col-md-5,.hero__lt.row .col-md-7 {width: 50%; }
+.hero__lt.row {flex-wrap: nowrap; }
+.main__menu ul li a {font: normal normal 300 13px / 1.5 var(--font);}
+.main__menu ul li:not(:last-child) {margin-bottom: 1rem; } p {font: normal normal 300 14px / 1.5 var(--font); } 
 
 
-.inter_nme a {
-    font-size: 20px;
-}.form-group label, .inter_year a {
-    font-size: 12px;
-}
-
-
-  .hero__btm .hero__lt::before {
-    width: 106px;
-    height: 106px;
-    right: 10px;
-    top: -44px;
-}.hero__btm .hero__lt img {
-    min-height: 100px;
-    max-height: 300px;
-}
-.page-section{overflow: hidden;}
-
-.hero__btm .hero__lt .lt__img {
-    margin: 0 0 1rem;
-}
-.main__heading h1 {
-    font: normal normal 300 34px/1 var(--font);
-}.about__inner .lt__about {
-    width: 80%;
-}.Works__sn .main__heading .heading__sub {
-    flex-wrap: wrap;
-}
-.hero__btm .hero__rt {
-    margin: 2rem auto 0;
-}
-.hero__btm .hero__rt h6 {
-    font: normal normal 600 25px/22px var(--font);
-}
 
 
 }
