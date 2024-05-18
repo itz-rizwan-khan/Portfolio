@@ -17,13 +17,33 @@ $(".slider__achiev").owlCarousel({
   smartSpeed: 1000,
   responsive: {
     0: {
-      items: 1,
+      items: 2,
     },
     600: {
       items: 3,
     },
     1000: {
       items: 5,
+    },
+  },
+});
+$(".works__grid__carousel").owlCarousel({
+  loop: true,
+  margin: 30,
+  autoplay: true,
+  dots: false,
+  nav: true,
+  autoplayTimeout: 3000,
+  smartSpeed: 1000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 2,
     },
   },
 });
@@ -37,7 +57,7 @@ $(document).ready(function () {
     autoplaySpeed: 7000,
     vertical: true,
     verticalSwiping: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     dots: false,  
