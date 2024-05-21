@@ -1,12 +1,12 @@
 $(document).ready(function () {
-  var $grid = $(".grid").isotope({
-    itemSelector: ".all",
-    percentPosition: true,
-    masonry: {
-      columnWidth: ".all",
-    },
-  });
-});
+//   var $grid = $(".grid").isotope({
+//     itemSelector: ".all",
+//     percentPosition: true,
+//     masonry: {
+//       columnWidth: ".all",
+//     },
+//   });
+
 $(".slider__achiev").owlCarousel({
   loop: false,
   margin: 30,
@@ -27,28 +27,29 @@ $(".slider__achiev").owlCarousel({
     },
   },
 });
-$(".works__grid__carousel").owlCarousel({
-  loop: true,
-  margin: 30,
-  autoplay: true,
-  dots: false,
-  nav: true,
-  autoplayTimeout: 3000,
-  smartSpeed: 1000,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 2,
-    },
-  },
+// $(".works__grid__carousel11").owlCarousel({
+//   loop: true,
+//   margin: 30,
+//   autoplay: true,
+//   dots: false,
+//   nav: true,
+//   autoplayTimeout: 3000,
+//   smartSpeed: 5000,
+//   autoplayHoverPause:true,
+//   responsive: {
+//     0: {
+//       items: 1,
+//     },
+//     600: {
+//       items: 1,
+//     },
+//     1000: {
+//       items: 2,
+//     },
+//   },
+// });
+
 });
-
-
 
 
 $(document).ready(function () {    
@@ -73,6 +74,40 @@ $(document).ready(function () {
     },
   },
   });  
+	
+	 $('.works__grid__carousel').slick( {
+    autoplay: true,
+   // mobileFirst:true,//add this one
+    autoplaySpeed: 7000,
+     pauseOnHover: true,
+      pauseOnFocus: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,  
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+		  pauseOnHover: false,
+          pauseOnFocus: false,
+		  slidesToShow: 1,
+         slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+		  pauseOnHover: false,
+      pauseOnFocus: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+  });  
+	
+	
 } );  
 
 
@@ -112,4 +147,3 @@ $(window).scroll(function() {
         }
     });
 }).scroll();
-
